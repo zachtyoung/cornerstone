@@ -1,0 +1,432 @@
+.navbar-container{
+    width: 100%;
+    background-color: #2f89fc;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+  }
+  .navbar{
+    width: 100%;
+    max-width: 1320px;
+    height: auto;
+    padding: 1rem 10px;
+    margin: 0 auto;
+    background-color: #2f89fc;
+    overflow: hidden;
+  }
+  .menu-btn-container{
+    width: 20%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    float: left;
+  }
+  .menu-btn{
+    height: 16px;
+    margin: 7px 10px 7px 0px;
+    float: left;
+    cursor: pointer;
+  }
+  .logo{
+    height: 30px;
+    cursor: pointer;
+  }
+  .user-container{
+    width: 20%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    color: #FFFFFF;
+    float: right;
+  }
+  .user-container-tab{
+    width: auto;
+    float: right;
+  }
+  .user-container-tab p{
+    color: #FFFFFF;
+    margin: 0 10px;
+    float: left;
+    cursor: pointer;
+  }
+  .user-container-tab-icon{
+    height: 20px;
+    margin: 5px 0;
+    padding-left: 10px;
+    float: left;
+    cursor: pointer;
+  }
+  .cart-badge{
+    height: 20px;
+    line-height: 18px;
+    padding: 0px 5px;
+    float: left;
+    background: #FFFFFF;
+    color: #2f89fc;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: -10px;
+    margin-top: -5px;
+    border-radius: 7px;
+    border: 1px solid #2f89fc;
+  }
+  .search-container{
+    width: 60%;
+    height: 30px;
+    float: left;
+    text-align: center;
+  }
+  .search-bar{
+    width: 90%;
+    height: 30px;
+    padding: 10px;
+    border: 0px;
+    outline: 0;
+    -webkit-border-radius: 8px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -moz-border-radius: 8px;
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-bottomright: 0px;
+    border-radius: 8px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    float: left;
+  }
+  .search-btn{
+    width: 10%;
+    max-width: 40px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 0px;
+    outline: 0;
+    cursor: pointer;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -moz-border-radius-bottomright: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    float: left;
+  }
+  .search-btn-icon{
+    height: 16px;
+    float: right;
+    margin-right: 10px;
+  }
+  .sidebar-user-container{
+    height: 24px;
+    display: flex;
+  }
+  .sidebar-user-avatar{
+    margin-right: 10px;
+    background: #2f89fc;
+  }
+  .sidebar-user-username{
+    height: 24px;
+    line-height: 24px;
+    color: #2f89fc;
+  }
+  .signin-container{}
+  .signin-container{
+    display: flex;
+    align-items: center;
+    color: #333333;
+  }
+  .signin-link{
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  /* Sidebar and Tint Screen */
+  .sidebar{
+    width: 260px;
+    height: 100vh;
+    left: -500px;
+    top: 0;
+    overflow-y: hidden;
+    position: fixed;
+    background: #FFFFFF;
+    transition: 550ms;
+    -webkit-box-shadow: 15px 0px 64px -18px rgba(0,0,0,0.75);
+    -moz-box-shadow: 15px 0px 64px -18px rgba(0,0,0,0.75);
+    box-shadow: 15px 0px 64px -18px rgba(0,0,0,0.75);
+    z-index: 17;
+  }
+  .sidebar a{
+    color: #2f89fc;
+  }
+  .sidebarClose{
+    left: 0%;
+    transition: 550ms;
+  }
+  .sidebarHeader{
+    width: 260px;
+    height: 56px;
+    line-height: 60px;
+    padding: 0 20px;
+    background: rgba(255, 255, 255);
+    border-bottom: .2px solid #F0F0F0;
+  }
+  .sidebarHeader p{
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    color: #3089FC;
+    margin: 18px 0px;
+    padding: 0px 0px 0px 6px;
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .sidebarback-btn{
+    height: 28px;
+    margin: 14px 0px;
+    padding: 6px;
+    float: right;
+    cursor: pointer;
+  }
+  .sidebarTitle{
+    padding: 10px 25px;
+    font-weight: bold;
+    color: rgb(88, 88, 88);
+  }
+  .sidebarContent{
+    max-height: 500px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    position: relative;
+  }
+  .sidebarContent ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+  .sidebarContent li{
+    display: block;
+    padding: 8px 25px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .sidebarContent li:hover{
+    background: #e7e7e7;
+    transition: 200ms;
+  }
+  .sidebarCategories{
+    width: 260px;
+    height: auto;
+    overflow: auto;
+    position: absolute;
+    top: 56px;
+    bottom: 206px;
+    padding-bottom: 20px;
+  }
+  .sidebarUser{
+    width: 260px;
+    position: absolute;
+    bottom: 0;
+    border-top: .2px solid #F0F0F0;
+    background: #FFFFFF;
+  }
+  .sidebarTint{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 16;
+    overflow: hidden;
+  }
+  .sidebarTintClose{
+    display: none;
+  }
+  
+  
+  /* Autoship and modul */
+  .alert-header{
+    height: auto;
+    padding: 3px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    background: #2877DE;
+    cursor: pointer;
+  }
+  .alert-header a{
+    color: #FFFFFF;
+  }
+  .autoshipIcon{
+    height: 16px;
+    padding-right: 5px;
+  }
+  .modul{
+    width: 80%;
+    height: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -40%;
+    background: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 16;
+  }
+  .modulClose{
+    display: none;
+  }
+  .modulCloseBtn{
+    padding: 1px 6px;
+    font-size: 13px;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    float: right;
+    cursor: pointer;
+  }
+  .modulCloseBtn:hover{
+    text-decoration: underline;
+  }
+  .modulTint{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  .modulTintClose{
+    display: none;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*  MOBILE SCREENS  */
+    @media only screen and (max-width: 975px) {
+      .menu-btn-container{
+        width: 29%;
+      }
+      .search-container{
+        width: 53%;
+      }
+      .search-bar{
+        width: 90%;
+      }
+      .search-btn{
+        width: 10%;
+      }
+      .user-container{
+        width: 18%;
+      }
+      .user-container-tab p{
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      .menu-btn-container{
+        width: 50%;
+      }
+      .search-container{
+        width: 100%;
+        margin-top: 10px;
+      }
+      .search-container{
+        width: 100%;
+      }
+      .search-bar{
+        width: 92%;
+      }
+      .search-btn{
+        width: 8%;
+        max-width: none;
+      }
+      .user-container{
+        width: 50%;
+      }
+      .user-container-tab-icon{
+        padding-left: 20px;
+      }
+      .user-container-tab p{
+        display: inline;
+        margin: 0 0 0 10px;
+      }
+      .cart-badge{
+        height: 18px;
+        line-height: 16px;
+        padding: 0px 5px;
+        float: left;
+        background: #FFFFFF;
+        color: #2f89fc;
+        font-size: 11px;
+        font-weight: bold;
+        margin-left: -10px;
+        margin-top: -2px;
+        border-radius: 7px;
+        border: 1.5px solid #2f89fc;
+      }
+  
+      /* Sidebar and Tint Screen */
+      .sidebar{
+        width: 100%;
+        height: 100%;
+        left: -700px;
+      }
+      .sidebarClose{
+        left: 0%;
+        transition: 550ms;
+      }
+      .sidebarHeader{
+        width: 100%;
+      }
+      .sidebarCategories{
+        width: 100%;
+      }
+      .sidebarUser{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        border-top: .2px solid #F0F0F0;
+        background: #FFFFFF;
+      }
+    }
+    @media only screen and (max-width: 375px) {
+      .menu-btn-container{
+        width: 60%;
+      }
+      .user-container{
+        width: 40%;
+      }
+      .user-container-tab p{
+        display: none;
+      }
+  
+    }
+    @keyframes scale {
+      0%{
+        transform: scale(1.0);
+      }
+      100%{
+        transform: scale(1.05);
+      }
+    }
