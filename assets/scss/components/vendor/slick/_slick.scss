@@ -101,20 +101,19 @@
     margin: 0;
 
     li {
-        @include square(32px);
         margin: 0;
         padding: remCalc(5px);
 
         // scss-lint:disable SelectorDepth, NestingDepth
         button,
         button::before {
-            @include square(15px);
+            @include square(10px);
             border-radius: 50%;
         }
 
         button {
             // scss-lint:disable NestingDepth
-            border: 1px solid $slick-dot-color;
+            border: 1px solid white;
             display: inline-block;
             margin: 0;
             padding: 0;
@@ -124,7 +123,7 @@
 
             &:hover {
                 &::before {
-                    background: $slick-dot-color;
+                    background: white;
                 }
             }
         }
@@ -139,7 +138,7 @@
         &.slick-active {
             // scss-lint:disable NestingDepth
             button::before {
-                background: $slick-dot-color-active;
+                background: white;
             }
         }
     }

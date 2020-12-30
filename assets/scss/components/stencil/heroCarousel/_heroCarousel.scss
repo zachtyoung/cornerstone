@@ -56,21 +56,7 @@
         margin: 0;
     }
 
-    .slick-next {
-        right: 15px;
 
-        @include breakpoint("medium") {
-            right: 25px;
-        }
-    }
-
-    .slick-prev {
-        left: 15px;
-
-        @include breakpoint("medium") {
-            left: 25px;
-        }
-    }
 
     .slick-dots {
         bottom: spacing("third");
@@ -80,9 +66,6 @@
         }
 
         // scss-lint:disable SelectorDepth, NestingDepth
-        li {
-            @include carouselOpaqueBackgrounds($slick-dot-bgColor);
-        }
     }
 }
 
