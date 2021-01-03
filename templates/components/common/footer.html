@@ -30,7 +30,7 @@
                     {{> components/common/social-links}}
             </article>
         {{/if}}
-        <section class="footer-info">
+        <!-- <section class="footer-info">
             <article class="footer-info-col footer-info-col--small" data-section-type="footer-webPages">
                 <h3 class="footer-info-heading">{{lang 'footer.navigate'}}</h3>
                 <ul class="footer-info-list">
@@ -80,13 +80,13 @@
             </article>
             {{/if}}
 
-            <article class="footer-info-col" data-section-type="newsletterSubscription">
+          <article class="footer-info-col" data-section-type="newsletterSubscription">
                 {{#if settings.show_newsletter_box}}
                     {{> components/common/subscription-form}}
                 {{/if}}
                 {{> components/common/payment-icons}}
-            </article>
-        </section>
+            </article> 
+        </section> -->
         {{#if theme_settings.geotrust_ssl_common_name}}
             <div class="footer-geotrust-ssl-seal">
                 {{> components/common/geotrust-ssl-seal}}
@@ -96,11 +96,6 @@
         <div class="footer-copyright">
             <p class="paypal-credit">{{nl2br settings.paypal_commerce_credit_message}}</p>
         </div>
-        {{/if}}
-        {{#if theme_settings.show_powered_by}}
-            <div class="footer-copyright">
-                <p class="powered-by">{{lang 'footer.powered_by'}} <a href="https://www.bigcommerce.com?utm_source=merchant&amp;utm_medium=poweredbyBC" rel="nofollow">BigCommerce</a></p>
-            </div>
         {{/if}}
         {{#if theme_settings.show_copyright_footer}}
             <div class="footer-copyright">

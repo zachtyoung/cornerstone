@@ -35,15 +35,7 @@
             <li class="navUser-item navUser-item--divider">|</li>
         {{/if}}
         <li class="navUser-item">
-            <button class="navUser-action navUser-action--quickSearch"
-               type="button"
-               id="quick-search-expand"
-               data-search="quickSearch"
-               aria-controls="quickSearch"
-               aria-label="{{lang 'common.search'}}"
-            >
-                {{lang 'common.search'}}
-            </button>
+      
         </li>
         {{#if settings.gift_certificates_enabled}}
             <li class="navUser-item">
@@ -76,15 +68,6 @@
                 >
                     {{lang 'common.login'}}
                 </a>
-                {{#if settings.account_creation_enabled}}
-                    <span class="navUser-or">{{lang 'common.or'}}</span>
-                    <a class="navUser-action"
-                       href="{{urls.auth.create_account}}"
-                       aria-label="{{lang 'common.sign_up'}}"
-                    >
-                        {{lang 'common.sign_up'}}
-                    </a>
-                {{/if}}
             {{/if}}
         </li>
         <li class="navUser-item navUser-item--cart">

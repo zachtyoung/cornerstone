@@ -23,8 +23,8 @@ export default function CouponDrawer() {
 
   return (
     <div>
-      <Button color="secondary" variant="contained" onClick={toggleDrawer('right', true)}>Click Here For A Coupon</Button>
-      <Drawer anchor="right" open={state.right} onClose={toggleDrawer('right', false)}>
+      <Button onClick={toggleDrawer('left', true)}>Menu</Button>
+      <Drawer anchor="left" open={state.left} onClose={toggleDrawer('left', false)}>
         <VerticalStepper />
       </Drawer>
     </div>

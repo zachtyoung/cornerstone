@@ -47,34 +47,12 @@ export default function VerticalLinearStepper() {
   const handleNext = () => {
     setActiveStep(prevActiveStep => prevActiveStep + 1);
   };
-
   return (
     <div className={classes.root}>
-      <Stepper activeStep={activeStep} orientation="vertical">
-        {steps.map((label, index) => (
-          <Step key={label}>
-            <StepLabel>{label}</StepLabel>
-            <StepContent>
-              <Typography>{getStepContent(index)}</Typography>
-              {activeStep === 0 ? <TextField /> : null}
-              <div className={classes.actionsContainer}>
-                {activeStep === 0 && (
-                  <div>
-                    <Button
-                      variant="contained"
-                      color="primary"
-                      onClick={handleNext}
-                      className={classes.button}
-                    >
-                      Submit
-                    </Button>
-                  </div>
-                )}
-              </div>
-            </StepContent>
-          </Step>
-        ))}
-      </Stepper>
+      <h1>Menu Item</h1>
+      <h1>Menu Item</h1>
+      <h1>Menu Item</h1>
+      <h1>Menu Item</h1>
     </div>
   );
 }
